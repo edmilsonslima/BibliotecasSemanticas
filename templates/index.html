@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Online</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Caminho ajustado -->
+</head>
+<body>
+<div class="container">
+    <h1>Dicionário Online</h1>
+
+    <form id="form-palavras">
+        <label for="palavras">Digite as palavras (separadas por vírgula):</label>
+        <input type="text" id="palavras" name="palavras" placeholder="Exemplo: manga, coragem, medo" required />
+        <button type="submit">Buscar Aulette</button>
+    </form>
+
+    <form id="form-palavra-portal">
+        <label for="palavra">Digite uma palavra para o Portal da Língua Portuguesa:</label>
+        <input type="text" id="palavra-portal" name="palavra" placeholder="Exemplo: coragem" required />
+        <button type="button" onclick="buscarPortal()">Buscar Portal</button>
+    </form>
+
+    <form id="form-pesquisa-combinada">
+        <label for="palavra-combinada">Digite uma palavra para buscar em ambos:</label>
+        <input type="text" id="palavra-combinada" name="palavra" placeholder="Exemplo: coragem" required />
+        <button type="button" onclick="buscarCombinado()">Buscar em Ambos</button>
+    </form>
+
+    <div id="resultado">
+        <h2>Resultados Aulette:</h2>
+        <pre id="output"></pre>
+    </div>
+
+    <div id="resultado-portal">
+        <h2>Resultados do Portal:</h2>
+        <pre id="output-portal"></pre>
+    </div>
+</div>
+    <script src="/static/script.js"></script> <!-- Caminho ajustado -->
+</body>
+</html>
